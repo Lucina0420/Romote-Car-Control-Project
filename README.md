@@ -11,3 +11,6 @@ v1.4 added camera code, work in progress
 
 v1.5 updated camera code, with vertical flippng, camera works well 
 
+v1.6 auto adjust image width
+
+
