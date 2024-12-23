@@ -1,0 +1,507 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="24.9.0">
+  <diagram name="Page-1" id="tJk3DOJ3ouYaLZDvNiuA">
+    <mxGraphModel dx="2049" dy="1114" grid="0" gridSize="10" guides="0" tooltips="0" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-1" value="start" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="118" y="107" width="64" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-2" value="WiFi" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="90" y="228" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-3" value="WebServer" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="90" y="374" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-8" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;server.on&lt;/font&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="281" y="359" width="203" height="103" as="geometry">
+            <mxRectangle x="281" y="515" width="90" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-9" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;(&quot;/&quot;, HTTP_GET, handleRoot);&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="m20s02qyv-5c8VBNTpsZ-8" vertex="1">
+          <mxGeometry y="30" width="203" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-11" value="&amp;nbsp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="m20s02qyv-5c8VBNTpsZ-8" vertex="1">
+          <mxGeometry y="73" width="203" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-12" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;handleRoot&lt;/font&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="537" y="359" width="217" height="103" as="geometry" />
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-13" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;request-&amp;gt;send_P(200, &quot;text/html&quot;, htmlHomePage);&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="m20s02qyv-5c8VBNTpsZ-12" vertex="1">
+          <mxGeometry y="30" width="217" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-14" value="&amp;nbsp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="m20s02qyv-5c8VBNTpsZ-12" vertex="1">
+          <mxGeometry y="73" width="217" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-16" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;htmlHomePage&lt;/font&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="800" y="359" width="158" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-17" value="HTML" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=14;" parent="m20s02qyv-5c8VBNTpsZ-16" vertex="1">
+          <mxGeometry y="30" width="158" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-18" value="CSS" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=14;" parent="m20s02qyv-5c8VBNTpsZ-16" vertex="1">
+          <mxGeometry y="60" width="158" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-19" value="JavaScript" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=14;" parent="m20s02qyv-5c8VBNTpsZ-16" vertex="1">
+          <mxGeometry y="90" width="158" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-23" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="m20s02qyv-5c8VBNTpsZ-1" target="m20s02qyv-5c8VBNTpsZ-2" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="220" y="388" as="sourcePoint" />
+            <mxPoint x="290" y="388" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-24" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="149.58" y="288" as="sourcePoint" />
+            <mxPoint x="149.58" y="348" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-25" value="&lt;font style=&quot;font-size: 18px;&quot; color=&quot;#000000&quot;&gt;Motor Control&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;fontColor=#999999;" parent="1" vertex="1">
+          <mxGeometry x="35" y="1765" width="172" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-26" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="149.5" y="434" as="sourcePoint" />
+            <mxPoint x="149.5" y="494" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-27" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;WiFi.softAP&lt;/font&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="281" y="213" width="150" height="90" as="geometry">
+            <mxRectangle x="281" y="213" width="119" height="31" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-28" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;WiFi.softAP(ssid, password)&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="m20s02qyv-5c8VBNTpsZ-27" vertex="1">
+          <mxGeometry y="30" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-29" value="&amp;nbsp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="m20s02qyv-5c8VBNTpsZ-27" vertex="1">
+          <mxGeometry y="60" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-30" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Camera&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#999999;" parent="1" vertex="1">
+          <mxGeometry x="93" y="785" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-35" value="&lt;font color=&quot;#000000&quot;&gt;WebSocket&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontColor=#999999;" parent="1" vertex="1">
+          <mxGeometry x="90" y="519" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-39" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="149.41" y="604" as="sourcePoint" />
+            <mxPoint x="149.41" y="664" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-40" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;html&lt;/font&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
+          <mxGeometry x="144" y="1865" width="337" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-41" value="&lt;div style=&quot;color: rgb(78, 91, 97); background-color: rgb(255, 255, 255); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; line-height: 19px; white-space: pre; font-size: 18px;&quot;&gt;&lt;span style=&quot;color: rgb(0, 92, 95); font-size: 18px;&quot;&gt;class=&quot;button&quot; &lt;br style=&quot;font-size: 18px;&quot;&gt;  &lt;/span&gt;&lt;span style=&quot;color: rgb(0, 92, 95); font-size: 18px;&quot;&gt;sendButtonInput(&quot;MoveCar&quot;,&quot;1&quot;)&lt;/span&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=18;" parent="m20s02qyv-5c8VBNTpsZ-40" vertex="1">
+          <mxGeometry y="30" width="337" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-44" value="&lt;div style=&quot;color: rgb(78, 91, 97); background-color: rgb(255, 255, 255); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 18px; line-height: 19px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: rgb(211, 84, 0); font-size: 18px;&quot;&gt;onCarInputWebSocketEvent()&lt;/span&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
+          <mxGeometry x="339" y="2005" width="366" height="101" as="geometry">
+            <mxRectangle x="616" y="486" width="235" height="31" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-45" value="&lt;div style=&quot;color: rgb(78, 91, 97); background-color: rgb(255, 255, 255); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; line-height: 19px; white-space: pre; font-size: 18px;&quot;&gt;&lt;span style=&quot;color: rgb(211, 84, 0); font-size: 18px;&quot;&gt;moveCar&lt;/span&gt;&lt;span style=&quot;color: rgb(67, 79, 84); font-size: 18px;&quot;&gt;(&lt;/span&gt;valueInt&lt;span style=&quot;color: rgb(67, 79, 84); font-size: 18px;&quot;&gt;)&lt;/span&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=18;" parent="m20s02qyv-5c8VBNTpsZ-44" vertex="1">
+          <mxGeometry y="30" width="366" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-46" value="&lt;div style=&quot;color: rgb(78, 91, 97); background-color: rgb(255, 255, 255); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; line-height: 19px; white-space: pre; font-size: 18px;&quot;&gt;&lt;span style=&quot;color: rgb(211, 84, 0); font-size: 18px;&quot;&gt;ledcWrite&lt;/span&gt;&lt;span style=&quot;color: rgb(67, 79, 84); font-size: 18px;&quot;&gt;(&lt;/span&gt;PWMSpeedChannel, valueInt&lt;span style=&quot;color: rgb(67, 79, 84); font-size: 18px;&quot;&gt;)&lt;/span&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=18;" parent="m20s02qyv-5c8VBNTpsZ-44" vertex="1">
+          <mxGeometry y="65" width="366" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-48" value="&lt;div style=&quot;color: rgb(78, 91, 97); background-color: rgb(255, 255, 255); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 18px; line-height: 19px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: rgb(211, 84, 0); font-size: 18px;&quot;&gt;moveCar&lt;/span&gt;&lt;span style=&quot;color: rgb(211, 84, 0); font-size: 18px;&quot;&gt;()&lt;/span&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
+          <mxGeometry x="588" y="2153" width="271" height="94" as="geometry" />
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-49" value="&lt;div style=&quot;color: rgb(78, 91, 97); background-color: rgb(255, 255, 255); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; line-height: 19px; white-space: pre; font-size: 18px;&quot;&gt;&lt;div style=&quot;line-height: 19px; font-size: 18px;&quot;&gt;&lt;span style=&quot;color: rgb(211, 84, 0); font-size: 18px;&quot;&gt;rotateMotor&lt;/span&gt;&lt;span style=&quot;color: rgb(67, 79, 84); font-size: 18px;&quot;&gt;(LEFT/&lt;/span&gt;RIGHT, &lt;br style=&quot;font-size: 18px;&quot;&gt;FORWARD/BACKWARD/STOP&lt;span style=&quot;color: rgb(67, 79, 84); font-size: 18px;&quot;&gt;)&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=18;" parent="m20s02qyv-5c8VBNTpsZ-48" vertex="1">
+          <mxGeometry y="30" width="271" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-51" value="&lt;div style=&quot;background-color: rgb(255, 255, 255); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 18px; line-height: 19px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: rgb(211, 84, 0); font-size: 18px;&quot;&gt;rotateMotor&lt;/span&gt;&lt;span style=&quot;color: rgb(211, 84, 0); font-size: 18px;&quot;&gt;()&lt;/span&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
+          <mxGeometry x="718" y="2298" width="361" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-52" value="&lt;div style=&quot;color: rgb(78, 91, 97); background-color: rgb(255, 255, 255); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; line-height: 19px; white-space: pre; font-size: 18px;&quot;&gt;&lt;div style=&quot;line-height: 19px; font-size: 18px;&quot;&gt;&lt;div style=&quot;line-height: 19px; font-size: 18px;&quot;&gt;&lt;span style=&quot;color: rgb(211, 84, 0); font-size: 18px;&quot;&gt;digitalWrite&lt;/span&gt;&lt;span style=&quot;color: rgb(67, 79, 84); font-size: 18px;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: rgb(211, 84, 0); font-size: 18px;&quot;&gt;motorPins&lt;/span&gt;[motorNumber].&lt;br style=&quot;font-size: 18px;&quot;&gt;&lt;span style=&quot;color: rgb(211, 84, 0); font-size: 18px;&quot;&gt;              pinIN#&lt;/span&gt;, HIGH/LOW&lt;span style=&quot;color: rgb(67, 79, 84); font-size: 18px;&quot;&gt;)&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=18;" parent="m20s02qyv-5c8VBNTpsZ-51" vertex="1">
+          <mxGeometry y="30" width="361" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="m20s02qyv-5c8VBNTpsZ-41" target="m20s02qyv-5c8VBNTpsZ-44" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="765" y="1995" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.02;entryY=0.076;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="m20s02qyv-5c8VBNTpsZ-9" target="m20s02qyv-5c8VBNTpsZ-12" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.023;entryY=0.065;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="m20s02qyv-5c8VBNTpsZ-13" target="m20s02qyv-5c8VBNTpsZ-16" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.007;entryY=0.076;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="m20s02qyv-5c8VBNTpsZ-3" target="m20s02qyv-5c8VBNTpsZ-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.002;entryY=0.1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="m20s02qyv-5c8VBNTpsZ-2" target="m20s02qyv-5c8VBNTpsZ-27" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="m20s02qyv-5c8VBNTpsZ-25" target="m20s02qyv-5c8VBNTpsZ-40" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="199" y="1811.9999999999998" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-62" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;setup&lt;/span&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="277" y="531" width="328" height="73" as="geometry">
+            <mxRectangle x="281" y="515" width="90" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-63" value="&lt;div style=&quot;color: rgb(78, 91, 97); background-color: rgb(255, 255, 255); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #d35400;&quot;&gt;wsCamera&lt;/span&gt;.&lt;span style=&quot;color: #d35400;&quot;&gt;onEvent&lt;/span&gt;&lt;span style=&quot;color: #434f54;&quot;&gt;(&lt;/span&gt;onCameraWebSocketEvent&lt;span style=&quot;color: #434f54;&quot;&gt;)&lt;/span&gt;;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #d35400;&quot;&gt;server&lt;/span&gt;.&lt;span style=&quot;color: #d35400;&quot;&gt;addHandler&lt;/span&gt;&lt;span style=&quot;color: #434f54;&quot;&gt;(&lt;/span&gt;&amp;amp;wsCamera&lt;span style=&quot;color: #434f54;&quot;&gt;)&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="m20s02qyv-5c8VBNTpsZ-62" vertex="1">
+          <mxGeometry y="30" width="328" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-66" value="&lt;div style=&quot;color: rgb(78, 91, 97); background-color: rgb(255, 255, 255); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;function initWebSocket() &lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="689" y="531" width="233" height="73" as="geometry">
+            <mxRectangle x="281" y="515" width="90" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-67" value="&lt;div style=&quot;color: rgb(78, 91, 97); background-color: rgb(255, 255, 255); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;initCameraWebSocket ();&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;initCarInputWebSocket();&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="m20s02qyv-5c8VBNTpsZ-66" vertex="1">
+          <mxGeometry y="30" width="233" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-68" value="&lt;div style=&quot;color: rgb(78, 91, 97); background-color: rgb(255, 255, 255); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;function initCarInputWebSocket()&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1068" y="529" width="279" height="73" as="geometry">
+            <mxRectangle x="281" y="515" width="90" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-69" value="&lt;div style=&quot;background-color: rgb(255, 255, 255); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="m20s02qyv-5c8VBNTpsZ-68" vertex="1">
+          <mxGeometry y="30" width="279" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.011;entryY=0.106;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="m20s02qyv-5c8VBNTpsZ-35" target="m20s02qyv-5c8VBNTpsZ-62" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-71" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.001;entryY=0.093;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="m20s02qyv-5c8VBNTpsZ-63" target="m20s02qyv-5c8VBNTpsZ-66" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-72" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.004;entryY=0.094;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="m20s02qyv-5c8VBNTpsZ-67" target="m20s02qyv-5c8VBNTpsZ-68" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-74" value="&lt;font color=&quot;#000000&quot;&gt;WebSocket&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fontColor=#999999;" parent="1" vertex="1">
+          <mxGeometry x="69" y="1006" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-75" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;websocket&lt;/span&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="693" y="1443" width="260" height="73" as="geometry">
+            <mxRectangle x="281" y="515" width="90" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-76" value="&lt;div style=&quot;color: rgb(78, 91, 97); background-color: rgb(255, 255, 255); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;span style=&quot;color: #00979d;&quot;&gt;void&lt;/span&gt; &lt;span style=&quot;color: #d35400;&quot;&gt;onCarInputWebSocketEvent&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="m20s02qyv-5c8VBNTpsZ-75" vertex="1">
+          <mxGeometry y="30" width="260" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-77" value="&lt;div style=&quot;color: rgb(78, 91, 97); background-color: rgb(255, 255, 255); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;function initWebSocket() &lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="113" y="1125" width="233" height="73" as="geometry">
+            <mxRectangle x="281" y="515" width="90" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-78" value="&lt;div style=&quot;color: rgb(78, 91, 97); background-color: rgb(255, 255, 255); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0, 92, 95);&quot;&gt;initCarInputWebSocket();&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="m20s02qyv-5c8VBNTpsZ-77" vertex="1">
+          <mxGeometry y="30" width="233" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-79" value="&lt;div style=&quot;color: rgb(78, 91, 97); background-color: rgb(255, 255, 255); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;function initCarInputWebSocket()&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="198" y="1246" width="460" height="137" as="geometry">
+            <mxRectangle x="281" y="515" width="90" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-80" value="&lt;div style=&quot;background-color: rgb(255, 255, 255); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div style=&quot;color: rgb(78, 91, 97); line-height: 19px;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;  websocketCarInput = new WebSocket(webSocketCarInputUrl);&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; websocketCarInput.onopen &amp;nbsp; &amp;nbsp;= function(event)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp;  { for &lt;/span&gt;&lt;span style=&quot;color: rgb(0, 92, 95);&quot;&gt;&quot;Speed&quot;/&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 92, 95);&quot;&gt;&quot;Light&quot;/&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 92, 95);&quot;&gt;&quot;Pan&quot;/&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 92, 95);&quot;&gt;&quot;Tilt&quot;, ...&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 92, 95);&quot;&gt; };&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; websocketCarInput.onclose &amp;nbsp; = function(event)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; websocketCarInput.onmessage = function(event)&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="m20s02qyv-5c8VBNTpsZ-79" vertex="1">
+          <mxGeometry y="30" width="460" height="107" as="geometry" />
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-84" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=default;fontSize=18;" parent="1" source="m20s02qyv-5c8VBNTpsZ-49" target="m20s02qyv-5c8VBNTpsZ-51" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-86" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontColor=default;fontSize=18;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="705" y="2050" as="sourcePoint" />
+            <mxPoint x="745" y="2150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-88" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="m20s02qyv-5c8VBNTpsZ-74" target="m20s02qyv-5c8VBNTpsZ-77" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="190" y="1026.5" as="sourcePoint" />
+            <mxPoint x="277" y="1113" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="229" y="1036" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-89" value="&lt;font color=&quot;#000000&quot;&gt;client&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;fontColor=#999999;arcSize=50;" parent="1" vertex="1">
+          <mxGeometry x="441" y="2579" width="172" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-90" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;html- javascript&lt;/font&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
+          <mxGeometry x="141" y="2689" width="772" height="349" as="geometry" />
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-91" value="&lt;div style=&quot;color: rgb(78, 91, 97); background-color: rgb(255, 255, 255); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; line-height: 19px; white-space: pre; font-size: 18px;&quot;&gt;&lt;div style=&quot;font-size: 14px; line-height: 19px;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;lt;script&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; var webSocketCameraUrl = &quot;ws:\/\/&quot; + window.location.hostname + &quot;/Camera&quot;;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; var websocketCamera;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; function initCameraWebSocket() &lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; {&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; websocketCamera = new WebSocket(webSocketCameraUrl);&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; websocketCamera.binaryType = &#39;blob&#39;;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; websocketCamera.onopen &amp;nbsp; &amp;nbsp;= function(event){};&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; websocketCamera.onclose &amp;nbsp; = function(event){setTimeout(initCameraWebSocket, 2000);};&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; websocketCamera.onmessage = function(event)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; {&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; var imageId = document.getElementById(&quot;cameraImage&quot;);&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; imageId.src = URL.createObjectURL(event.data);&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; };&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; }&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=18;" parent="m20s02qyv-5c8VBNTpsZ-90" vertex="1">
+          <mxGeometry y="30" width="772" height="319" as="geometry" />
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-92" value="&lt;div style=&quot;color: rgb(78, 91, 97); background-color: rgb(255, 255, 255); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 18px; line-height: 19px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: rgb(211, 84, 0); font-size: 18px;&quot;&gt;onCarInputWebSocketEvent()&lt;/span&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
+          <mxGeometry x="314" y="3142" width="366" height="101" as="geometry">
+            <mxRectangle x="616" y="486" width="235" height="31" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-93" value="&lt;div style=&quot;color: rgb(78, 91, 97); background-color: rgb(255, 255, 255); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; line-height: 19px; white-space: pre; font-size: 18px;&quot;&gt;&lt;span style=&quot;color: rgb(211, 84, 0); font-size: 18px;&quot;&gt;moveCar&lt;/span&gt;&lt;span style=&quot;color: rgb(67, 79, 84); font-size: 18px;&quot;&gt;(&lt;/span&gt;valueInt&lt;span style=&quot;color: rgb(67, 79, 84); font-size: 18px;&quot;&gt;)&lt;/span&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=18;" parent="m20s02qyv-5c8VBNTpsZ-92" vertex="1">
+          <mxGeometry y="30" width="366" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-94" value="&lt;div style=&quot;color: rgb(78, 91, 97); background-color: rgb(255, 255, 255); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; line-height: 19px; white-space: pre; font-size: 18px;&quot;&gt;&lt;span style=&quot;color: rgb(211, 84, 0); font-size: 18px;&quot;&gt;ledcWrite&lt;/span&gt;&lt;span style=&quot;color: rgb(67, 79, 84); font-size: 18px;&quot;&gt;(&lt;/span&gt;PWMSpeedChannel, valueInt&lt;span style=&quot;color: rgb(67, 79, 84); font-size: 18px;&quot;&gt;)&lt;/span&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=18;" parent="m20s02qyv-5c8VBNTpsZ-92" vertex="1">
+          <mxGeometry y="65" width="366" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-99" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="m20s02qyv-5c8VBNTpsZ-91" target="m20s02qyv-5c8VBNTpsZ-92" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="762" y="2819" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-100" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="m20s02qyv-5c8VBNTpsZ-89" target="m20s02qyv-5c8VBNTpsZ-90" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="196" y="2636" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-102" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontColor=default;fontSize=18;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1163" y="3045" as="sourcePoint" />
+            <mxPoint x="1203" y="3145" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-103" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1.008;exitY=0.291;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;exitPerimeter=0;" parent="1" source="m20s02qyv-5c8VBNTpsZ-107" target="m20s02qyv-5c8VBNTpsZ-75" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="578" y="1486" as="sourcePoint" />
+            <mxPoint x="660" y="1555.93" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="575" y="1486" />
+              <mxPoint x="575" y="1461" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-105" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="660" y="1290" as="sourcePoint" />
+            <mxPoint x="822" y="1443" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="822" y="1290" />
+              <mxPoint x="822" y="1443" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-106" value="&lt;div style=&quot;color: rgb(78, 91, 97); background-color: rgb(255, 255, 255); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;span style=&quot;color: #00979d;&quot;&gt;void&lt;/span&gt; &lt;span style=&quot;color: #d35400;&quot;&gt;setup&lt;/span&gt;&lt;span style=&quot;color: #434f54;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #00979d;&quot;&gt;void&lt;/span&gt;&lt;span style=&quot;color: #434f54;&quot;&gt;)&lt;/span&gt; &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="82" y="1443" width="374" height="73" as="geometry">
+            <mxRectangle x="281" y="515" width="90" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-107" value="&lt;div style=&quot;color: rgb(78, 91, 97); background-color: rgb(255, 255, 255); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div&gt;&amp;nbsp; &lt;span style=&quot;color: #d35400;&quot;&gt;wsCarInput&lt;/span&gt;.&lt;span style=&quot;color: #d35400;&quot;&gt;onEvent&lt;/span&gt;&lt;span style=&quot;color: #434f54;&quot;&gt;(&lt;/span&gt;onCarInputWebSocketEvent&lt;span style=&quot;color: #434f54;&quot;&gt;)&lt;/span&gt;;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &lt;span style=&quot;color: #d35400;&quot;&gt;server&lt;/span&gt;.&lt;span style=&quot;color: #d35400;&quot;&gt;addHandler&lt;/span&gt;&lt;span style=&quot;color: #434f54;&quot;&gt;(&lt;/span&gt;&amp;amp;wsCarInput&lt;span style=&quot;color: #434f54;&quot;&gt;)&lt;/span&gt;;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="m20s02qyv-5c8VBNTpsZ-106" vertex="1">
+          <mxGeometry y="30" width="374" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="m20s02qyv-5c8VBNTpsZ-109" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="352" y="1178" as="sourcePoint" />
+            <mxPoint x="432" y="1246" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="432" y="1178" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T-9XGfmkSTcF9U1JvMz7-1" value="&lt;font color=&quot;#000000&quot;&gt;Web Server&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;fontColor=#999999;arcSize=50;" parent="1" vertex="1">
+          <mxGeometry x="341" y="3425" width="172" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="T-9XGfmkSTcF9U1JvMz7-2" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;WebSocket Init&lt;/font&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
+          <mxGeometry x="130.95" y="3540" width="592" height="305" as="geometry" />
+        </mxCell>
+        <mxCell id="T-9XGfmkSTcF9U1JvMz7-3" value="&lt;div style=&quot;color: rgb(78, 91, 97); background-color: rgb(255, 255, 255); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; line-height: 19px; white-space: pre; font-size: 20px;&quot;&gt;&lt;div style=&quot;font-size: 20px; line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px; font-size: 20px;&quot;&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;div style=&quot;line-height: 19px; font-size: 20px;&quot;&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;AsyncWebServer &lt;span style=&quot;color: rgb(211, 84, 0); font-size: 20px;&quot;&gt;server&lt;/span&gt;&lt;span style=&quot;color: rgb(67, 79, 84); font-size: 20px;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 92, 95); font-size: 20px;&quot;&gt;80&lt;/span&gt;&lt;span style=&quot;color: rgb(67, 79, 84); font-size: 20px;&quot;&gt;)&lt;/span&gt;;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;AsyncWebSocket &lt;span style=&quot;color: rgb(211, 84, 0); font-size: 20px;&quot;&gt;wsCamera&lt;/span&gt;&lt;span style=&quot;color: rgb(67, 79, 84); font-size: 20px;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 92, 95); font-size: 20px;&quot;&gt;&quot;/Camera&quot;&lt;/span&gt;&lt;span style=&quot;color: rgb(67, 79, 84); font-size: 20px;&quot;&gt;)&lt;/span&gt;;&lt;br style=&quot;font-size: 20px;&quot;&gt;&lt;br style=&quot;font-size: 20px;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;span style=&quot;color: rgb(0, 151, 157); font-size: 20px;&quot;&gt;void&lt;/span&gt; &lt;span style=&quot;color: rgb(211, 84, 0); font-size: 20px;&quot;&gt;setup&lt;/span&gt;&lt;span style=&quot;color: rgb(67, 79, 84); font-size: 20px;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 151, 157); font-size: 20px;&quot;&gt;void&lt;/span&gt;&lt;span style=&quot;color: rgb(67, 79, 84); font-size: 20px;&quot;&gt;)&lt;/span&gt; &lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;span style=&quot;color: rgb(67, 79, 84); font-size: 20px;&quot;&gt;{&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;  ...&lt;br style=&quot;font-size: 20px;&quot;&gt;  &lt;span style=&quot;color: rgb(211, 84, 0); font-size: 20px;&quot;&gt;server&lt;/span&gt;.&lt;span style=&quot;color: rgb(211, 84, 0); font-size: 20px;&quot;&gt;on&lt;/span&gt;&lt;span style=&quot;color: rgb(67, 79, 84); font-size: 20px;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 92, 95); font-size: 20px;&quot;&gt;&quot;/&quot;&lt;/span&gt;, HTTP_GET, handleRoot&lt;span style=&quot;color: rgb(67, 79, 84); font-size: 20px;&quot;&gt;)&lt;/span&gt;;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&amp;nbsp; &lt;span style=&quot;color: rgb(211, 84, 0); font-size: 20px;&quot;&gt;server&lt;/span&gt;.&lt;span style=&quot;color: rgb(211, 84, 0); font-size: 20px;&quot;&gt;onNotFound&lt;/span&gt;&lt;span style=&quot;color: rgb(67, 79, 84); font-size: 20px;&quot;&gt;(&lt;/span&gt;handleNotFound&lt;span style=&quot;color: rgb(67, 79, 84); font-size: 20px;&quot;&gt;)&lt;/span&gt;;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&amp;nbsp; &lt;span style=&quot;color: rgb(211, 84, 0); font-size: 20px;&quot;&gt;wsCamera&lt;/span&gt;.&lt;span style=&quot;color: rgb(211, 84, 0); font-size: 20px;&quot;&gt;onEvent&lt;/span&gt;&lt;span style=&quot;color: rgb(67, 79, 84); font-size: 20px;&quot;&gt;(&lt;/span&gt;onCameraWebSocketEvent&lt;span style=&quot;color: rgb(67, 79, 84); font-size: 20px;&quot;&gt;)&lt;/span&gt;;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&amp;nbsp; &lt;span style=&quot;color: rgb(211, 84, 0); font-size: 20px;&quot;&gt;server&lt;/span&gt;.&lt;span style=&quot;color: rgb(211, 84, 0); font-size: 20px;&quot;&gt;addHandler&lt;/span&gt;&lt;span style=&quot;color: rgb(67, 79, 84); font-size: 20px;&quot;&gt;(&lt;/span&gt;&amp;amp;wsCamera&lt;span style=&quot;color: rgb(67, 79, 84); font-size: 20px;&quot;&gt;)&lt;/span&gt;;&lt;br style=&quot;font-size: 20px;&quot;&gt;  &lt;span style=&quot;color: rgb(211, 84, 0); font-size: 20px;&quot;&gt;server&lt;/span&gt;.&lt;span style=&quot;color: rgb(211, 84, 0); font-size: 20px;&quot;&gt;begin&lt;/span&gt;&lt;span style=&quot;color: rgb(67, 79, 84); font-size: 20px;&quot;&gt;()&lt;/span&gt;;&lt;/div&gt;  ...&lt;/div&gt;&lt;div style=&quot;line-height: 19px; font-size: 20px;&quot;&gt;}&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=20;" parent="T-9XGfmkSTcF9U1JvMz7-2" vertex="1">
+          <mxGeometry y="30" width="592" height="275" as="geometry" />
+        </mxCell>
+        <mxCell id="T-9XGfmkSTcF9U1JvMz7-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="T-9XGfmkSTcF9U1JvMz7-1" target="T-9XGfmkSTcF9U1JvMz7-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="185.95" y="3487" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T-9XGfmkSTcF9U1JvMz7-9" value="&lt;font color=&quot;#000000&quot;&gt;Web Client&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;fontColor=#999999;arcSize=50;" parent="1" vertex="1">
+          <mxGeometry x="1268" y="3417" width="172" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="T-9XGfmkSTcF9U1JvMz7-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=18;" parent="1" source="T-9XGfmkSTcF9U1JvMz7-9" target="T-9XGfmkSTcF9U1JvMz7-27" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1082.5" y="3485" as="sourcePoint" />
+            <mxPoint x="1229.5" y="3538" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T-9XGfmkSTcF9U1JvMz7-13" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Camera Init&lt;/font&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
+          <mxGeometry x="129" y="3899" width="597" height="305" as="geometry" />
+        </mxCell>
+        <mxCell id="T-9XGfmkSTcF9U1JvMz7-14" value="&lt;div style=&quot;color: rgb(78, 91, 97); background-color: rgb(255, 255, 255); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; line-height: 19px; white-space: pre; font-size: 20px;&quot;&gt;&lt;div style=&quot;font-size: 20px; line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px; font-size: 20px;&quot;&gt;&lt;div style=&quot;line-height: 19px; font-size: 20px;&quot;&gt;&lt;div style=&quot;line-height: 19px; font-size: 20px;&quot;&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;span style=&quot;color: rgb(0, 151, 157); font-size: 20px;&quot;&gt;void&lt;/span&gt; &lt;span style=&quot;color: rgb(211, 84, 0); font-size: 20px;&quot;&gt;setupCamera&lt;/span&gt;&lt;span style=&quot;color: rgb(67, 79, 84); font-size: 20px;&quot;&gt;()&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;span style=&quot;color: rgb(67, 79, 84); font-size: 20px;&quot;&gt;{&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&amp;nbsp; &lt;span style=&quot;color: rgb(0, 151, 157); font-size: 20px;&quot;&gt;camera_config_t&lt;/span&gt; config;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&amp;nbsp; &lt;span style=&quot;color: rgb(211, 84, 0); font-size: 20px;&quot;&gt;config&lt;/span&gt;.&lt;span style=&quot;color: rgb(211, 84, 0); font-size: 20px;&quot;&gt;ledc_channel&lt;/span&gt; = LEDC_CHANNEL_4;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&amp;nbsp; &lt;span style=&quot;color: rgb(211, 84, 0); font-size: 20px;&quot;&gt;config&lt;/span&gt;.&lt;span style=&quot;color: rgb(211, 84, 0); font-size: 20px;&quot;&gt;ledc_timer&lt;/span&gt; = LEDC_TIMER_2;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt; （GPIO settings omit）&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&amp;nbsp; &lt;span style=&quot;color: rgb(211, 84, 0); font-size: 20px;&quot;&gt;config&lt;/span&gt;.&lt;span style=&quot;color: rgb(211, 84, 0); font-size: 20px;&quot;&gt;xclk_freq_hz&lt;/span&gt; = &lt;span style=&quot;color: rgb(0, 92, 95); font-size: 20px;&quot;&gt;20000000&lt;/span&gt;;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&amp;nbsp; &lt;span style=&quot;color: rgb(211, 84, 0); font-size: 20px;&quot;&gt;config&lt;/span&gt;.&lt;span style=&quot;color: rgb(211, 84, 0); font-size: 20px;&quot;&gt;pixel_format&lt;/span&gt; = PIXFORMAT_JPEG;&amp;nbsp; &lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&amp;nbsp; &lt;span style=&quot;color: rgb(211, 84, 0); font-size: 20px;&quot;&gt;config&lt;/span&gt;.&lt;span style=&quot;color: rgb(211, 84, 0); font-size: 20px;&quot;&gt;frame_size&lt;/span&gt; = FRAMESIZE_VGA;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&amp;nbsp; &lt;span style=&quot;color: rgb(211, 84, 0); font-size: 20px;&quot;&gt;config&lt;/span&gt;.&lt;span style=&quot;color: rgb(211, 84, 0); font-size: 20px;&quot;&gt;jpeg_quality&lt;/span&gt; = &lt;span style=&quot;color: rgb(0, 92, 95); font-size: 20px;&quot;&gt;10&lt;/span&gt;;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&amp;nbsp; &lt;span style=&quot;color: rgb(211, 84, 0); font-size: 20px;&quot;&gt;config&lt;/span&gt;.&lt;span style=&quot;color: rgb(211, 84, 0); font-size: 20px;&quot;&gt;fb_count&lt;/span&gt; = &lt;span style=&quot;color: rgb(0, 92, 95); font-size: 20px;&quot;&gt;1&lt;/span&gt;;&lt;br style=&quot;font-size: 20px;&quot;&gt;&lt;div style=&quot;line-height: 19px; font-size: 20px;&quot;&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;span style=&quot;color: rgb(149, 165, 166); font-size: 20px;&quot;&gt;&amp;nbsp; &lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;span style=&quot;color: rgb(149, 165, 166); font-size: 20px;&quot;&gt;  // camera init&lt;/span&gt;&lt;span style=&quot;color: rgb(149, 165, 166); font-size: 20px;&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&amp;nbsp; &lt;span style=&quot;color: rgb(0, 151, 157); font-size: 20px;&quot;&gt;esp_err_t&lt;/span&gt; err = &lt;span style=&quot;color: rgb(211, 84, 0); font-size: 20px;&quot;&gt;esp_camera_init&lt;/span&gt;&lt;span style=&quot;color: rgb(67, 79, 84); font-size: 20px;&quot;&gt;(&lt;/span&gt;&amp;amp;config&lt;span style=&quot;color: rgb(67, 79, 84); font-size: 20px;&quot;&gt;)&lt;/span&gt;; &lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&amp;nbsp; &amp;nbsp;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=default;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=20;" parent="T-9XGfmkSTcF9U1JvMz7-13" vertex="1">
+          <mxGeometry y="30" width="597" height="275" as="geometry" />
+        </mxCell>
+        <mxCell id="T-9XGfmkSTcF9U1JvMz7-15" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Camera cature image&lt;/font&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
+          <mxGeometry x="130.95" y="4295" width="597" height="227" as="geometry" />
+        </mxCell>
+        <mxCell id="T-9XGfmkSTcF9U1JvMz7-16" value="&lt;div style=&quot;color: rgb(78, 91, 97); background-color: rgb(255, 255, 255); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; line-height: 19px; white-space: pre; font-size: 20px;&quot;&gt;&lt;div style=&quot;font-size: 20px; line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px; font-size: 20px;&quot;&gt;&lt;div style=&quot;line-height: 19px; font-size: 20px;&quot;&gt;&lt;div style=&quot;line-height: 19px; font-size: 20px;&quot;&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;div style=&quot;line-height: 19px; font-size: 20px;&quot;&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;span style=&quot;color: rgb(0, 151, 157); font-size: 20px;&quot;&gt;void&lt;/span&gt; &lt;span style=&quot;color: rgb(211, 84, 0); font-size: 20px;&quot;&gt;sendCameraPicture&lt;/span&gt;&lt;span style=&quot;color: rgb(67, 79, 84); font-size: 20px;&quot;&gt;()&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;span style=&quot;color: rgb(67, 79, 84); font-size: 20px;&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;span style=&quot;color: rgb(67, 79, 84); font-size: 20px;&quot;&gt;{&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 19px; font-size: 20px;&quot;&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;span style=&quot;color: rgb(149, 165, 166); font-size: 20px;&quot;&gt;  ...&amp;nbsp; &lt;br style=&quot;font-size: 20px;&quot;&gt;  //capture a frame&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&amp;nbsp; &lt;span style=&quot;color: rgb(0, 151, 157); font-size: 20px;&quot;&gt;camera_fb_t&lt;/span&gt; * fb = &lt;span style=&quot;color: rgb(211, 84, 0); font-size: 20px;&quot;&gt;esp_camera_fb_get&lt;/span&gt;&lt;span style=&quot;color: rgb(67, 79, 84); font-size: 20px;&quot;&gt;()&lt;/span&gt;;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&amp;nbsp; &lt;span style=&quot;color: rgb(114, 142, 0); font-size: 20px;&quot;&gt;if&lt;/span&gt; &lt;span style=&quot;color: rgb(67, 79, 84); font-size: 20px;&quot;&gt;(&lt;/span&gt;!fb&lt;span style=&quot;color: rgb(67, 79, 84); font-size: 20px;&quot;&gt;)&lt;/span&gt; &lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&amp;nbsp; &lt;span style=&quot;color: rgb(67, 79, 84); font-size: 20px;&quot;&gt;{&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;span style=&quot;color: rgb(211, 84, 0); font-size: 20px;&quot;&gt;Serial&lt;/span&gt;.&lt;span style=&quot;color: rgb(211, 84, 0); font-size: 20px;&quot;&gt;println&lt;/span&gt;&lt;span style=&quot;color: rgb(67, 79, 84); font-size: 20px;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 92, 95); font-size: 20px;&quot;&gt;&quot;Frame buffer could not be acquired&quot;&lt;/span&gt;&lt;span style=&quot;color: rgb(67, 79, 84); font-size: 20px;&quot;&gt;)&lt;/span&gt;;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;span style=&quot;color: rgb(114, 142, 0); font-size: 20px;&quot;&gt;return&lt;/span&gt;;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&amp;nbsp; &lt;span style=&quot;color: rgb(67, 79, 84); font-size: 20px;&quot;&gt;}&lt;/span&gt; &lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;div style=&quot;line-height: 19px; font-size: 20px;&quot;&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&amp;nbsp; &amp;nbsp;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=20;" parent="T-9XGfmkSTcF9U1JvMz7-15" vertex="1">
+          <mxGeometry y="30" width="597" height="197" as="geometry" />
+        </mxCell>
+        <mxCell id="T-9XGfmkSTcF9U1JvMz7-17" value="Image sending via Websocket" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
+          <mxGeometry x="129" y="4573" width="602" height="182" as="geometry" />
+        </mxCell>
+        <mxCell id="T-9XGfmkSTcF9U1JvMz7-18" value="&lt;div style=&quot;color: rgb(78, 91, 97); background-color: rgb(255, 255, 255); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; line-height: 19px; white-space: pre; font-size: 20px;&quot;&gt;&lt;div style=&quot;font-size: 20px; line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px; font-size: 20px;&quot;&gt;&lt;div style=&quot;line-height: 19px; font-size: 20px;&quot;&gt;&lt;div style=&quot;line-height: 19px; font-size: 20px;&quot;&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;div style=&quot;line-height: 19px; font-size: 20px;&quot;&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;span style=&quot;color: rgb(0, 151, 157); font-size: 20px;&quot;&gt;void&lt;/span&gt; &lt;span style=&quot;color: rgb(211, 84, 0); font-size: 20px;&quot;&gt;sendCameraPicture&lt;/span&gt;&lt;span style=&quot;color: rgb(67, 79, 84); font-size: 20px;&quot;&gt;()&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;span style=&quot;color: rgb(67, 79, 84); font-size: 20px;&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;span style=&quot;color: rgb(67, 79, 84); font-size: 20px;&quot;&gt;{&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 19px; font-size: 20px;&quot;&gt;&lt;span style=&quot;color: rgb(149, 165, 166); font-size: 20px;&quot;&gt;  ...&amp;nbsp; &lt;br style=&quot;font-size: 20px;&quot;&gt;&lt;/span&gt;&lt;div style=&quot;line-height: 19px; font-size: 20px;&quot;&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&amp;nbsp; &lt;span style=&quot;color: rgb(114, 142, 0); font-size: 20px;&quot;&gt;if&lt;/span&gt; &lt;span style=&quot;color: rgb(67, 79, 84); font-size: 20px;&quot;&gt;(&lt;/span&gt;cameraClientId != &lt;span style=&quot;color: rgb(0, 92, 95); font-size: 20px;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot;color: rgb(67, 79, 84); font-size: 20px;&quot;&gt;)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&amp;nbsp; &lt;span style=&quot;color: rgb(67, 79, 84); font-size: 20px;&quot;&gt;{&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&amp;nbsp; &amp;nbsp; &lt;span style=&quot;color: rgb(211, 84, 0); font-size: 20px;&quot;&gt;wsCamera&lt;/span&gt;.&lt;span style=&quot;color: rgb(211, 84, 0); font-size: 20px;&quot;&gt;binary&lt;/span&gt;&lt;span style=&quot;color: rgb(67, 79, 84); font-size: 20px;&quot;&gt;(&lt;/span&gt;cameraClientId, &lt;span style=&quot;color: rgb(211, 84, 0); font-size: 20px;&quot;&gt;fb&lt;/span&gt;-&amp;gt;&lt;span style=&quot;color: rgb(211, 84, 0); font-size: 20px;&quot;&gt;buf&lt;/span&gt;, &lt;span style=&quot;color: rgb(211, 84, 0); font-size: 20px;&quot;&gt;fb&lt;/span&gt;-&amp;gt;&lt;span style=&quot;color: rgb(211, 84, 0); font-size: 20px;&quot;&gt;len&lt;/span&gt;&lt;span style=&quot;color: rgb(67, 79, 84); font-size: 20px;&quot;&gt;)&lt;/span&gt;;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&amp;nbsp; &lt;span style=&quot;color: rgb(67, 79, 84); font-size: 20px;&quot;&gt;}&lt;/span&gt;&amp;nbsp; &amp;nbsp;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=20;" parent="T-9XGfmkSTcF9U1JvMz7-17" vertex="1">
+          <mxGeometry y="30" width="602" height="152" as="geometry" />
+        </mxCell>
+        <mxCell id="T-9XGfmkSTcF9U1JvMz7-19" value="Client Init&amp;nbsp; （JavaScript）" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
+          <mxGeometry x="935" y="3788" width="841" height="270" as="geometry" />
+        </mxCell>
+        <UserObject label="&lt;div style=&quot;color: rgb(78, 91, 97); background-color: rgb(255, 255, 255); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 20px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;span style=&quot;color: rgb(0, 92, 95); font-size: 20px;&quot;&gt;var webSocketCameraUrl = &quot;ws:\/\/&quot; + window.location.hostname + &quot;/Camera&quot;; &amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;span style=&quot;color: rgb(0, 92, 95); font-size: 20px;&quot;&gt;var websocketCamera; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;span style=&quot;color: rgb(0, 92, 95); font-size: 20px;&quot;&gt;function initCameraWebSocket() &lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;span style=&quot;color: rgb(0, 92, 95); font-size: 20px;&quot;&gt;{&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;span style=&quot;color: rgb(0, 92, 95); font-size: 20px;&quot;&gt;&amp;nbsp; websocketCamera = new WebSocket(webSocketCameraUrl);&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;span style=&quot;color: rgb(0, 92, 95); font-size: 20px;&quot;&gt;&amp;nbsp; websocketCamera.binaryType = &#39;blob&#39;;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;span style=&quot;color: rgb(0, 92, 95); font-size: 20px;&quot;&gt;&amp;nbsp; websocketCamera.onopen &amp;nbsp; &amp;nbsp;= function(event){};&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;span style=&quot;color: rgb(0, 92, 95); font-size: 20px;&quot;&gt;&amp;nbsp; websocketCamera.onclose &amp;nbsp; = function(event)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;span style=&quot;color: rgb(0, 92, 95); font-size: 20px;&quot;&gt;  {&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;span style=&quot;color: rgb(0, 92, 95); font-size: 20px;&quot;&gt;&amp;nbsp; &amp;nbsp; setTimeout(initCameraWebSocket, 2000);&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;span style=&quot;color: rgb(0, 92, 95); font-size: 20px;&quot;&gt;&amp;nbsp; };&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;span style=&quot;color: rgb(0, 92, 95); font-size: 20px;&quot;&gt;}&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" link="&#xa;&lt;div style=&quot;color: #4e5b61;background-color: #ffffff;font-family: Consolas, &#39;Courier New&#39;, monospace;font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; var webSocketCameraUrl = &quot;ws:\/\/&quot; + window.location.hostname + &quot;/Camera&quot;; &amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; var websocketCamera; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; function initCameraWebSocket() &lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; {&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; websocketCamera = new WebSocket(webSocketCameraUrl);&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; websocketCamera.binaryType = &#39;blob&#39;;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; websocketCamera.onopen &amp;nbsp; &amp;nbsp;= function(event){};&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; websocketCamera.onclose &amp;nbsp; = function(event){&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; setTimeout(initCameraWebSocket, 2000);&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; };&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; }&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&#xa;&#xa;" id="T-9XGfmkSTcF9U1JvMz7-22">
+          <mxCell style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=20;" parent="T-9XGfmkSTcF9U1JvMz7-19" vertex="1">
+            <mxGeometry y="30" width="841" height="240" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="T-9XGfmkSTcF9U1JvMz7-23" value="Client receives images data&amp;nbsp; （JavaScript）" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
+          <mxGeometry x="937" y="4160" width="840" height="216" as="geometry" />
+        </mxCell>
+        <UserObject label="&lt;div style=&quot;color: rgb(78, 91, 97); background-color: rgb(255, 255, 255); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 20px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div style=&quot;line-height: 19px; font-size: 20px;&quot;&gt;&lt;div style=&quot;line-height: 19px; font-size: 20px;&quot;&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;span style=&quot;color: rgb(0, 92, 95); font-size: 20px;&quot;&gt;function initCameraWebSocket() &lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;span style=&quot;color: rgb(0, 92, 95); font-size: 20px;&quot;&gt;{&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;span style=&quot;color: rgb(0, 92, 95); font-size: 20px;&quot;&gt;  ...&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;span style=&quot;color: rgb(0, 92, 95); font-size: 20px;&quot;&gt;&amp;nbsp; websocketCamera.onmessage = function(event)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;span style=&quot;color: rgb(0, 92, 95); font-size: 20px;&quot;&gt;&amp;nbsp; {&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;span style=&quot;color: rgb(0, 92, 95); font-size: 20px;&quot;&gt;&amp;nbsp; &amp;nbsp; var imageId = document.getElementById(&quot;cameraImage&quot;);&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;span style=&quot;color: rgb(0, 92, 95); font-size: 20px;&quot;&gt;&amp;nbsp; &amp;nbsp; imageId.src = URL.createObjectURL(event.data);&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;span style=&quot;color: rgb(0, 92, 95); font-size: 20px;&quot;&gt;&amp;nbsp; };&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;span style=&quot;color: rgb(0, 92, 95); font-size: 20px;&quot;&gt;}&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" link="&#xa;&lt;div style=&quot;color: #4e5b61;background-color: #ffffff;font-family: Consolas, &#39;Courier New&#39;, monospace;font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; var webSocketCameraUrl = &quot;ws:\/\/&quot; + window.location.hostname + &quot;/Camera&quot;; &amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; var websocketCamera; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; function initCameraWebSocket() &lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; {&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; websocketCamera = new WebSocket(webSocketCameraUrl);&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; websocketCamera.binaryType = &#39;blob&#39;;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; websocketCamera.onopen &amp;nbsp; &amp;nbsp;= function(event){};&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; websocketCamera.onclose &amp;nbsp; = function(event){&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; setTimeout(initCameraWebSocket, 2000);&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; };&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; }&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&#xa;&#xa;" id="T-9XGfmkSTcF9U1JvMz7-48">
+          <mxCell style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=20;" parent="T-9XGfmkSTcF9U1JvMz7-23" vertex="1">
+            <mxGeometry y="30" width="840" height="186" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="T-9XGfmkSTcF9U1JvMz7-36" value="" style="endArrow=classic;html=1;rounded=0;endSize=12;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="T-9XGfmkSTcF9U1JvMz7-23" source="T-9XGfmkSTcF9U1JvMz7-48" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="291" y="218" as="sourcePoint" />
+            <mxPoint x="423" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T-9XGfmkSTcF9U1JvMz7-25" value="Client dynamically displays video frame by frame" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
+          <mxGeometry x="939" y="4574" width="844" height="185" as="geometry" />
+        </mxCell>
+        <UserObject label="&lt;div style=&quot;color: rgb(78, 91, 97); background-color: rgb(255, 255, 255); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 20px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div style=&quot;line-height: 19px; font-size: 20px;&quot;&gt;&lt;div style=&quot;line-height: 19px; font-size: 20px;&quot;&gt;&lt;div style=&quot;line-height: 19px; font-size: 20px;&quot;&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;span style=&quot;color: rgb(0, 92, 95); font-size: 20px;&quot;&gt;&amp;nbsp; &amp;lt;body class=&quot;noselect&quot; align=&quot;center&quot; style=&quot;background-color:white&quot;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;span style=&quot;color: rgb(0, 92, 95); font-size: 20px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;lt;table id=&quot;mainTable&quot; style=&quot;width:400px;margin:auto;table-layout:fixed&quot; CELLSPACING=10&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;span style=&quot;color: rgb(0, 92, 95); font-size: 20px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;lt;tr&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;span style=&quot;color: rgb(0, 92, 95); font-size: 20px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;lt;img id=&quot;cameraImage&quot; src=&quot;&quot; style=&quot;width:400px;height:250px&quot;&amp;gt;&amp;lt;/td&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;span style=&quot;color: rgb(0, 92, 95); font-size: 20px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;lt;/tr&amp;gt; &lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" link="&#xa;&lt;div style=&quot;color: #4e5b61;background-color: #ffffff;font-family: Consolas, &#39;Courier New&#39;, monospace;font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; var webSocketCameraUrl = &quot;ws:\/\/&quot; + window.location.hostname + &quot;/Camera&quot;; &amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; var websocketCamera; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; function initCameraWebSocket() &lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; {&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; websocketCamera = new WebSocket(webSocketCameraUrl);&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; websocketCamera.binaryType = &#39;blob&#39;;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; websocketCamera.onopen &amp;nbsp; &amp;nbsp;= function(event){};&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; websocketCamera.onclose &amp;nbsp; = function(event){&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; setTimeout(initCameraWebSocket, 2000);&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; };&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; }&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&#xa;&#xa;" id="T-9XGfmkSTcF9U1JvMz7-26">
+          <mxCell style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=20;" parent="T-9XGfmkSTcF9U1JvMz7-25" vertex="1">
+            <mxGeometry y="30" width="844" height="155" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="T-9XGfmkSTcF9U1JvMz7-27" value="Client HTTP Init&amp;nbsp; （HTTP/CSS/JS）" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
+          <mxGeometry x="934" y="3540" width="841" height="165" as="geometry" />
+        </mxCell>
+        <UserObject label="&lt;div style=&quot;background-color: rgb(255, 255, 255); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 20px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div style=&quot;color: rgb(78, 91, 97); font-size: 20px;&quot;&gt;&lt;span style=&quot;color: rgb(0, 92, 95); font-size: 20px;&quot;&gt;Access &lt;/span&gt;http://192.168.4.1, load HTTP, CSS,Javascript; &lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot; color=&quot;#005c5f&quot;&gt;include &lt;/font&gt;&lt;font style=&quot;font-size: 20px;&quot; color=&quot;#4e5b61&quot;&gt;dynamically generating the WebSocket URL&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(78, 91, 97); font-size: 20px;&quot;&gt;&lt;span style=&quot;color: rgb(0, 92, 95); font-size: 20px;&quot;&gt;&lt;br style=&quot;font-size: 20px;&quot;&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 92, 95); font-size: 20px;&quot;&gt;&amp;lt;script&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(78, 91, 97); line-height: 19px; font-size: 20px;&quot;&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;span style=&quot;color: rgb(0, 92, 95); font-size: 20px;&quot;&gt;&amp;nbsp; var webSocketCameraUrl = &quot;ws:\/\/&quot; + window.location.hostname + &quot;/Camera&quot;; &lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" link="&#xa;&lt;div style=&quot;color: #4e5b61;background-color: #ffffff;font-family: Consolas, &#39;Courier New&#39;, monospace;font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; var webSocketCameraUrl = &quot;ws:\/\/&quot; + window.location.hostname + &quot;/Camera&quot;; &amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; var websocketCamera; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; function initCameraWebSocket() &lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; {&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; websocketCamera = new WebSocket(webSocketCameraUrl);&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; websocketCamera.binaryType = &#39;blob&#39;;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; websocketCamera.onopen &amp;nbsp; &amp;nbsp;= function(event){};&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; websocketCamera.onclose &amp;nbsp; = function(event){&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; setTimeout(initCameraWebSocket, 2000);&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; };&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #005c5f;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; }&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&#xa;&#xa;" id="T-9XGfmkSTcF9U1JvMz7-28">
+          <mxCell style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=20;" parent="T-9XGfmkSTcF9U1JvMz7-27" vertex="1">
+            <mxGeometry y="30" width="841" height="135" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="T-9XGfmkSTcF9U1JvMz7-30" value="" style="endArrow=classic;html=1;rounded=0;endSize=12;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="430" y="4204" as="sourcePoint" />
+            <mxPoint x="430" y="4295" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T-9XGfmkSTcF9U1JvMz7-32" value="" style="endArrow=classic;html=1;rounded=0;endSize=12;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="429" y="3847" as="sourcePoint" />
+            <mxPoint x="429" y="3897" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T-9XGfmkSTcF9U1JvMz7-33" value="" style="endArrow=classic;html=1;rounded=0;endSize=12;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="T-9XGfmkSTcF9U1JvMz7-28" target="T-9XGfmkSTcF9U1JvMz7-19" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1233.38" y="3711" as="sourcePoint" />
+            <mxPoint x="1233" y="3790" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T-9XGfmkSTcF9U1JvMz7-34" value="" style="endArrow=classic;html=1;rounded=0;endSize=12;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="T-9XGfmkSTcF9U1JvMz7-22" target="T-9XGfmkSTcF9U1JvMz7-23" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1238.12" y="4057" as="sourcePoint" />
+            <mxPoint x="1238" y="4157" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T-9XGfmkSTcF9U1JvMz7-38" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.998;exitY=0.77;exitDx=0;exitDy=0;exitPerimeter=0;strokeColor=#0000FF;endSize=12;entryX=0.001;entryY=0.409;entryDx=0;entryDy=0;entryPerimeter=0;spacing=4;strokeWidth=2;dashed=1;" parent="1" source="T-9XGfmkSTcF9U1JvMz7-18" target="T-9XGfmkSTcF9U1JvMz7-48" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="663" y="4479" as="sourcePoint" />
+            <mxPoint x="930" y="4398" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="840" y="4720" />
+              <mxPoint x="840" y="4266" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T-9XGfmkSTcF9U1JvMz7-40" value="&lt;font style=&quot;font-size: 28px;&quot;&gt;Image data&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=default;" parent="1" vertex="1">
+          <mxGeometry x="810" y="4533" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="T-9XGfmkSTcF9U1JvMz7-41" value="Release buffer" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
+          <mxGeometry x="128" y="4824" width="604" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="T-9XGfmkSTcF9U1JvMz7-42" value="&lt;div style=&quot;color: rgb(78, 91, 97); background-color: rgb(255, 255, 255); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; line-height: 19px; white-space: pre; font-size: 20px;&quot;&gt;&lt;div style=&quot;font-size: 20px; line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px; font-size: 20px;&quot;&gt;&lt;div style=&quot;line-height: 19px; font-size: 20px;&quot;&gt;&lt;div style=&quot;line-height: 19px; font-size: 20px;&quot;&gt;&lt;div style=&quot;line-height: 19px; font-size: 20px;&quot;&gt;&lt;div style=&quot;line-height: 19px; font-size: 20px;&quot;&gt;&amp;nbsp; &lt;span style=&quot;color: rgb(211, 84, 0); font-size: 20px;&quot;&gt;esp_camera_fb_return&lt;/span&gt;&lt;span style=&quot;color: rgb(67, 79, 84); font-size: 20px;&quot;&gt;(&lt;/span&gt;fb&lt;span style=&quot;color: rgb(67, 79, 84); font-size: 20px;&quot;&gt;)&lt;/span&gt;;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=20;" parent="T-9XGfmkSTcF9U1JvMz7-41" vertex="1">
+          <mxGeometry y="30" width="604" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="T-9XGfmkSTcF9U1JvMz7-43" value="" style="endArrow=classic;html=1;rounded=0;endSize=12;exitX=0.502;exitY=1.01;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="T-9XGfmkSTcF9U1JvMz7-18" target="T-9XGfmkSTcF9U1JvMz7-41" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="359.82" y="4773" as="sourcePoint" />
+            <mxPoint x="359.82" y="4822" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T-9XGfmkSTcF9U1JvMz7-44" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.511;exitY=1.046;exitDx=0;exitDy=0;exitPerimeter=0;strokeColor=default;endSize=12;" parent="1" source="T-9XGfmkSTcF9U1JvMz7-42" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="731" y="4728" as="sourcePoint" />
+            <mxPoint x="281" y="4290" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="437" y="4980" />
+              <mxPoint x="70" y="4980" />
+              <mxPoint x="70" y="4255" />
+              <mxPoint x="281" y="4255" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T-9XGfmkSTcF9U1JvMz7-46" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=1;endSize=12;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="T-9XGfmkSTcF9U1JvMz7-26" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1225" y="5017" as="sourcePoint" />
+            <mxPoint x="1480" y="4160" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1361" y="4840" />
+              <mxPoint x="1820" y="4840" />
+              <mxPoint x="1820" y="4119" />
+              <mxPoint x="1680" y="4119" />
+              <mxPoint x="1480" y="4119" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T-9XGfmkSTcF9U1JvMz7-31" value="" style="endArrow=classic;html=1;rounded=0;endSize=12;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="430" y="4524" as="sourcePoint" />
+            <mxPoint x="430" y="4573" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Evwwmui06OnjoZ21dqdy-1" value="&lt;font style=&quot;font-size: 20px;&quot; color=&quot;#000000&quot;&gt;DHT 11 Sensor Data&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;fontColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="152" y="5428" width="172" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Evwwmui06OnjoZ21dqdy-2" value="&lt;p style=&quot;margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; direction: ltr; unicode-bidi: embed; word-break: normal;&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;WebSocket Setup&lt;/font&gt;&lt;/p&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="260" y="5589" width="538" height="168" as="geometry" />
+        </mxCell>
+        <mxCell id="Evwwmui06OnjoZ21dqdy-3" value="&lt;div style=&quot;background-color: rgb(255, 255, 255); line-height: 19px;&quot;&gt;&lt;font color=&quot;#4e5b61&quot; face=&quot;Consolas, Courier New, monospace&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;AsyncWebServer server(80);        //Initialize server&lt;br&gt;AsyncWebSocket ws(&quot;/data&quot;);        //Set up WebSocket&lt;br&gt;server.on(&quot;/&quot;, HTTP_GET, ...)       //Serve HTML page&lt;br&gt;ws.onEvent(onWsEvent);      //WebSocket event handler&lt;br&gt;server.begin();                    //Start the server&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="Evwwmui06OnjoZ21dqdy-2">
+          <mxGeometry y="30" width="538" height="138" as="geometry" />
+        </mxCell>
+        <mxCell id="Evwwmui06OnjoZ21dqdy-4" value="&lt;p style=&quot;background-color: rgb(255, 255, 255); line-height: 19px; white-space: pre;&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot; face=&quot;Helvetica&quot;&gt;DHT11 Data Collecting&lt;/font&gt;&lt;/p&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="665" y="5820" width="376" height="118" as="geometry">
+            <mxRectangle x="616" y="486" width="235" height="31" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Evwwmui06OnjoZ21dqdy-5" value="&lt;div style=&quot;background-color: rgb(255, 255, 255); line-height: 19px;&quot;&gt;&lt;font color=&quot;#4e5b61&quot;&gt;&lt;font face=&quot;Consolas, Courier New, monospace&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;dht.begin()            //Initialize&lt;br&gt;dht.readTemperature()  &lt;/span&gt;&lt;/font&gt;&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; white-space: pre;&quot;&gt;//Collect data&lt;/span&gt;&lt;font face=&quot;Consolas, Courier New, monospace&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;br&gt;dht.readHumidity()     //Collect data&lt;/span&gt;&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="Evwwmui06OnjoZ21dqdy-4">
+          <mxGeometry y="30" width="376" height="88" as="geometry" />
+        </mxCell>
+        <mxCell id="Evwwmui06OnjoZ21dqdy-7" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Server Sends Data to WebSocket&lt;/font&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="799" y="6016" width="472" height="94" as="geometry" />
+        </mxCell>
+        <mxCell id="Evwwmui06OnjoZ21dqdy-8" value="&lt;div style=&quot;color: rgb(78, 91, 97); background-color: rgb(255, 255, 255); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; line-height: 19px; white-space: pre; font-size: 18px;&quot;&gt;&lt;div style=&quot;line-height: 19px; font-size: 18px;&quot;&gt;&lt;code&gt;notifyClients()&lt;/code&gt;   &lt;br/&gt;               //Send data to WebSocket &lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="Evwwmui06OnjoZ21dqdy-7">
+          <mxGeometry y="30" width="472" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="Evwwmui06OnjoZ21dqdy-9" value="&lt;div style=&quot;background-color: rgb(255, 255, 255); line-height: 19px; white-space: pre;&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot; face=&quot;Helvetica&quot;&gt;Client Receives and Display&lt;/font&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="1026" y="6161" width="479" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Evwwmui06OnjoZ21dqdy-10" value="&lt;div style=&quot;color: rgb(78, 91, 97); background-color: rgb(255, 255, 255); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; line-height: 19px; white-space: pre; font-size: 18px;&quot;&gt;&lt;div style=&quot;line-height: 19px; font-size: 18px;&quot;&gt;&lt;div style=&quot;line-height: 19px; font-size: 18px;&quot;&gt;JavaScript WebSocket client code&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="Evwwmui06OnjoZ21dqdy-9">
+          <mxGeometry y="30" width="479" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Evwwmui06OnjoZ21dqdy-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=18;" edge="1" parent="1" source="Evwwmui06OnjoZ21dqdy-3" target="Evwwmui06OnjoZ21dqdy-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="882" y="5658" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Evwwmui06OnjoZ21dqdy-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=18;" edge="1" parent="1" source="Evwwmui06OnjoZ21dqdy-1" target="Evwwmui06OnjoZ21dqdy-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="316" y="5475" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Evwwmui06OnjoZ21dqdy-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.649;entryY=-0.005;entryDx=0;entryDy=0;fontColor=default;fontSize=18;entryPerimeter=0;" edge="1" parent="1" source="Evwwmui06OnjoZ21dqdy-8" target="Evwwmui06OnjoZ21dqdy-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Evwwmui06OnjoZ21dqdy-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=default;fontSize=18;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="Evwwmui06OnjoZ21dqdy-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1038" y="5914" as="sourcePoint" />
+            <mxPoint x="1110" y="6013" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1110" y="5894" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
