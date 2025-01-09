@@ -1,7 +1,3 @@
-https://script.google.com/macros/s/AKfycbx7446pFzeqLWLljWMQNZK3vjPEgfcpTS3LkzVZ5uy8-cgaoaput5TXVRoC8Cqodeq8/exec
-
-
-
 #include <WiFiS3.h>
 #include "DHT.h"
 
@@ -113,27 +109,8 @@ void loop() {
                         "  fetch('/save', { method: 'POST' })"
                         "    .then(response => response.text())"
                         "    .then(data => alert('Data saved!'));"
-                        "}"
+                        "};"
 
-                        // delete
-                        "function saveToGoogleSheets() {"
-                        "  if (!randomNumber) {"
-                        "    alert("Please generate a number first!");"
-                        "    return;"
-                        "  } else {"
-                        "    fetch("/", {"
-                        "      method: "POST","
-                        "      headers: { "Content-Type": "application/json" },"
-                        "      body: JSON.stringify({ randomNumber }),"
-                        "    })"
-                        "      .then((response) => response.text())"
-                        "      .then((data) => {"
-                        "        alert(data);"
-                        "      })"
-                        "      .catch((error) => {"
-                        "        alert("Error: " + error.message);"
-                        "      });"
-                        "  }"
 
 
 
@@ -162,7 +139,7 @@ void loop() {
                         "<p>Humidity: <span id='humi'>--</span></p>"
                         // "<button onclick='updateData()'>Update</button>"
                         "<button onclick='updateData()' style='font-size: 1.5em; padding: 15px 30px; margin-top: 20px; vertical-align: top; margin-right: 30px; display: inline-block;'>Update</button>"
-                        "<button onclick="saveData()">Save to Google Sheets</button>"
+                        "<button onclick='saveData()'>Save to Google Sheets</button>"
                         "</body>"
                         "</html>";
 
@@ -194,7 +171,7 @@ String getSensorData(String type) {
 // Function to send data to Google Sheets
 void sendToGoogleSheets(String temp, String humi) {
   // Replace with your web app URL
-  const char* googleScriptURL = "https://script.google.com/macros/s/AKfycbzkufn1tulBGjNzcANy0nWChirLihsiXL4FUkUPI5Wu5PzTV09XId0OTyjIANuzoS0/exec";
+  const char* googleScriptURL = "https://script.google.com/macros/s/AKfycbx7446pFzeqLWLljWMQNZK3vjPEgfcpTS3LkzVZ5uy8-cgaoaput5TXVRoC8Cqodeq8/exec";
 
   WiFiClient client;
   if (client.connect(googleScriptURL, 80)) {
@@ -206,5 +183,7 @@ void sendToGoogleSheets(String temp, String humi) {
     client.println();
     client.print(data);
     client.stop();
+  } else {
+    Serial.println("Failed to connect");
   }
 }
