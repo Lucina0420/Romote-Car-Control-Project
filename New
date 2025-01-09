@@ -1,4 +1,4 @@
-#include <WiFiS3.h> // Library for Wi-Fi support
+#include <WiFiS3.h>
 #include "DHT.h"
 
 #define DHT_PIN 4
@@ -6,8 +6,8 @@
 
 DHT dht(DHT_PIN, DHT_TYPE);
 
-const char* ssid = "SM-A526W9279";        // Replace with your Wi-Fi network name 
-const char* password = "glrm4275"; // Replace with your Wi-Fi password 
+const char* ssid = "Arduino_AP";      // Access Point SSID
+const char* password = "12345678";   // Access Point Password
 
 WiFiServer server(80);
 
@@ -15,19 +15,15 @@ void setup() {
   Serial.begin(9600);
   dht.begin();
 
-  // Connect to Wi-Fi as a client
-  Serial.println("Connecting to Wi-Fi...");
-  WiFi.begin(ssid, password);
-
-  // Wait for connection
-  while (WiFi.status() != WL_CONNECTED) {
-    delay(500);
-    Serial.print(".");
+  // Start WiFi in Access Point mode
+  Serial.println("Setting up Access Point...");
+  if (!WiFi.beginAP(ssid, password)) {
+    Serial.println("Failed to start Access Point");
+    while (true);
   }
-
-  Serial.println("\nWi-Fi connected");
-  Serial.print("IP Address: ");
-  Serial.println(WiFi.localIP());
+  Serial.println("Access Point started");
+  Serial.print("AP IP Address: ");
+  Serial.println(WiFi.localIP()); // Get the IP address of the AP
 
   // Start the web server
   server.begin();
@@ -59,7 +55,6 @@ void loop() {
         return;
       }
 
-      // Send updated sensor data as JSON
       client.println("HTTP/1.1 200 OK");
       client.println("Content-Type: application/json");
       client.println();
@@ -68,34 +63,20 @@ void loop() {
       client.print(", \"humidity\": ");
       client.print(humidity);
       client.println("}");
+    } else if (request.indexOf("POST /save") >= 0) {
+      // Handle the save button click (POST request to save data)
+      String temperatureData = getSensorData("temperature");
+      String humidityData = getSensorData("humidity");
+
+      // Assuming you have a script set up to accept the data and store it in Google Sheets
+      sendToGoogleSheets(temperatureData, humidityData);
+
+      // Respond to the client
+      client.println("HTTP/1.1 200 OK");
+      client.println("Content-Type: text/html");
+      client.println();
+      client.println("<html><body><h1>Data Saved!</h1></body></html>");
     } else {
-      // Serve the HTML page
-      Serial.println("Serving HTML page");
-      // String htmlPage = "<!DOCTYPE html>"
-      //                   "<html>"
-      //                   "<head>"
-      //                   "<title>Sensor Data</title>"
-      //                   "<script>"
-      //                   "function updateData() {"
-      //                   "  fetch('/update')"
-      //                   "    .then(response => response.json())"
-      //                   "    .then(data => {"
-      //                   "      document.getElementById('temp').innerText = data.temperature + ' °C';"
-      //                   "      document.getElementById('humi').innerText = data.humidity + ' %';"
-      //                   "    })"
-      //                   "    .catch(error => console.error('Error fetching data:', error));"
-      //                   "} "
-      //                   "</script>"
-      //                   "</head>"
-      //                   "<body>"
-      //                   "<h1>Temperature and Humidity</h1>"
-      //                   "<p>Temperature: <span id='temp'>-- °C</span></p>"
-      //                   "<p>Humidity: <span id='humi'>-- %</span></p>"
-      //                   "<button onclick='updateData()'>Update</button>"
-      //                   "</body>"
-      //                   "</html>";
-
-
       String htmlPage = "<!DOCTYPE html>"
                         "<html>"
                         "<head>"
@@ -122,6 +103,35 @@ void loop() {
                         "    })"
                         "    .catch(error => console.error('Error fetching data:', error));"
                         "} "
+
+                        "function saveData() {"
+                        "  fetch('/save', { method: 'POST' })"
+                        "    .then(response => response.text())"
+                        "    .then(data => alert('Data saved!'));"
+                        "}"
+
+                        // delete
+                        "function saveToGoogleSheets() {"
+                        "  if (!randomNumber) {"
+                        "    alert("Please generate a number first!");"
+                        "    return;"
+                        "  } else {"
+                        "    fetch("/", {"
+                        "      method: "POST","
+                        "      headers: { "Content-Type": "application/json" },"
+                        "      body: JSON.stringify({ randomNumber }),"
+                        "    })"
+                        "      .then((response) => response.text())"
+                        "      .then((data) => {"
+                        "        alert(data);"
+                        "      })"
+                        "      .catch((error) => {"
+                        "        alert("Error: " + error.message);"
+                        "      });"
+                        "  }"
+
+
+
                         "</script>"
                         "</head>"
                         "<body>"
@@ -147,9 +157,9 @@ void loop() {
                         "<p>Humidity: <span id='humi'>--</span></p>"
                         // "<button onclick='updateData()'>Update</button>"
                         "<button onclick='updateData()' style='font-size: 1.5em; padding: 15px 30px; margin-top: 20px; vertical-align: top; margin-right: 30px; display: inline-block;'>Update</button>"
+                        "<button onclick="saveData()">Save to Google Sheets</button>"
                         "</body>"
                         "</html>";
-
 
       // Send response to client
       client.println("HTTP/1.1 200 OK");
@@ -161,5 +171,35 @@ void loop() {
     // Confirm client disconnected
     client.stop();
     Serial.println("Client disconnected");
+  }
+}
+
+// Function to get sensor data as a string
+String getSensorData(String type) {
+  float value;
+  if (type == "temperature") {
+    value = dht.readTemperature();
+  } else if (type == "humidity") {
+    value = dht.readHumidity();
+  }
+  
+  return String(value);
+}
+
+// Function to send data to Google Sheets
+void sendToGoogleSheets(String temp, String humi) {
+  // Replace with your web app URL
+  const char* googleScriptURL = "https://script.google.com/macros/s/AKfycbySpP5AFMCgZCnENUH61bCp5xgeUZtej2xPsMMWo8M50ALJkXuwOBr4hSmnJ-ET7kIPtQ/exec";
+
+  WiFiClient client;
+  if (client.connect(googleScriptURL, 80)) {
+    String data = "temperature=" + temp + "&humidity=" + humi;
+    client.println("POST /exec HTTP/1.1");
+    client.println("Host: script.google.com");
+    client.println("Content-Type: application/x-www-form-urlencoded");
+    client.println("Content-Length: " + String(data.length()));
+    client.println();
+    client.print(data);
+    client.stop();
   }
 }
