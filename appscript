@@ -1,0 +1,15 @@
+function doPost(e) {
+  try {
+    var data = JSON.parse(e.postData.contents);  // Parse the incoming POST request body
+    var temperature = data.temperature;  // Access the random number from the body
+    var humidity = data.humidity;
+
+    var sheet = SpreadsheetApp.openById("1trcDewNB4uqjPo-WRU83lqBRI-7GPWELJMX-PYjMVV4").getSheetByName('Sheet1');
+
+    sheet.appendRow([new Date(), temperature]);
+
+    return ContentService.createTextOutput("Success");
+  } catch (error) {
+    return ContentService.createTextOutput("Error: " + error.message);  // Return error message if something goes wrong
+  }
+}
