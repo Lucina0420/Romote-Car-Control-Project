@@ -22,6 +22,10 @@ V1.1 Access Point mode
 
 V1.2 Client Mode
 
-V1.3
+V1.3 Add HTML, CSS, and JS
+
+V1.4 Add update button function
+
+V1.5 Add save button function
 
 
