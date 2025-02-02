@@ -38,7 +38,7 @@ V1.5 Add save button function
 
 # UI Interface
 ![image](https://github.com/user-attachments/assets/259c2544-5752-4151-81c0-29956759cc4b)
-![Snipaste_2025-01-12_20-09-20](https://github.com/user-attachments/assets/22dd5e6b-bfd9-427c-8e47-7cc240572ee4)
+![image](https://github.com/user-attachments/assets/59b778af-9793-45df-b067-d7fbc1acd907)
 ![image](https://github.com/user-attachments/assets/ff3fc831-c48a-44cc-bd47-4b03c3c8c1a4)
 
 # Hardware Picture
