@@ -1,12 +1,12 @@
 # Project Overview:
-The "Attic Robot" is a remote-controlled car designed to assist homeowners, inspectors, and pest control professionals in safely and efficiently inspecting hard-to-reach attic spaces. Traditional methods of attic inspection often involve physically entering cramped, dark, and potentially hazardous areas, making the process time-consuming and risky. This project offers a safer and more practical alternative by enabling remote inspections through a compact, camera-equipped car that can navigate attic spaces while providing real-time video feeds.
-
-The project incorporates various sensors, including a humidity and temperature sensor and a camera mounted on a servo motor, to detect mold, insect activity, and environmental conditions. The car is controlled using a PC by connecting to a specific network, with arrows controlling the movements. The live camera feed, accessible via a websocket, allows the user to check real-time situations in the attic.
+The project incorporates various sensors, including a humidity and temperature sensor and a camera mounted on a servo motor, to detect mold, insect activity, and environmental conditions. The car is controlled using a PC by connecting to a specific network, with arrows controlling the movements. The live camera feed, accessible via a websocket, allows the user to check real-time situations.
 
 This product targets adults who value technology-driven solutions for home improvement and inspection tasks. By integrating user-friendly controls and many other features, the car simplifies attic inspections for a wide range of users, regardless of technical expertise.
 
+
 # Design
 ![image](https://github.com/user-attachments/assets/1f736adf-a114-4469-80de-a2b84e4bc1c6)
+
 
 # SW Platform
 ![updated-tech-sw-platform](https://github.com/user-attachments/assets/494eeea5-5f86-4e54-b2ed-c37b4a844416)
@@ -14,6 +14,7 @@ This product targets adults who value technology-driven solutions for home impro
 
 
 # Code Dev
+
 ## ESP32_DEV/Romote-Car-Control-Project
 
 V1.1 initial code with wifi and simple web (hello message)
@@ -44,10 +45,12 @@ V1.4 Add update button function
 
 V1.5 Add save button function
 
+
 # UI Interface
 ![image](https://github.com/user-attachments/assets/259c2544-5752-4151-81c0-29956759cc4b)
 ![image](https://github.com/user-attachments/assets/ea2d187c-6bb3-4890-8f4d-06835f32944c)
 ![image](https://github.com/user-attachments/assets/ff3fc831-c48a-44cc-bd47-4b03c3c8c1a4)
+
 
 # Hardware Picture
 ![car_pic](https://github.com/user-attachments/assets/20dd265b-cb87-4c38-bc0f-60cd4f1b83b4)
