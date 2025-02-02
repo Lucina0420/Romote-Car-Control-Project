@@ -42,6 +42,7 @@ V1.5 Add save button function
 ![image](https://github.com/user-attachments/assets/ff3fc831-c48a-44cc-bd47-4b03c3c8c1a4)
 
 # Hardware Picture
+![car_pic](https://github.com/user-attachments/assets/20dd265b-cb87-4c38-bc0f-60cd4f1b83b4)
 
 
 
