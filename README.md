@@ -5,6 +5,14 @@ The project incorporates various sensors, including a humidity and temperature s
 
 This product targets adults who value technology-driven solutions for home improvement and inspection tasks. By integrating user-friendly controls and many other features, the car simplifies attic inspections for a wide range of users, regardless of technical expertise.
 
+# Design
+![image](https://github.com/user-attachments/assets/1f736adf-a114-4469-80de-a2b84e4bc1c6)
+
+# SW Platform
+![updated-tech-sw-platform](https://github.com/user-attachments/assets/494eeea5-5f86-4e54-b2ed-c37b4a844416)
+
+
+
 # Code Dev
 ## ESP32_DEV/Romote-Car-Control-Project
 
