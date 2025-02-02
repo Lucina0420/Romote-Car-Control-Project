@@ -18,6 +18,10 @@ v1.7 combine ESP32 webpage with HTML, CSS, and JS
 
 V1.0 Initial code
 
-V1.1
+V1.1 Access Point mode
+
+V1.2 Client Mode
+
+V1.3
 
 
